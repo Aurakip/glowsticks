@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "glowsticks",
+	"version": "${version}",
+	"name": "glowsticks",
+	"description": "A mod that brings lights to any occasion✨",
+	"authors": [
+		"Gay Meow!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT-License",
+	"icon": "assets/glowsticks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gaymeow.glowsticks.Glowsticks"
+		],
+		"fabric-datagen": [
+			"gaymeow.glowsticks.GlowsticksDataGenerator"
+		]
+	},
+	"mixins": [
+		"glowsticks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
