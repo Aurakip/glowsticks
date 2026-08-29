@@ -5,9 +5,11 @@ import gaymeow.glowsticks.item.custom.GlowstickItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.references.ItemIds;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.ColorCollection;
 
 import java.util.function.Function;
 
@@ -29,6 +31,7 @@ public class ModItems {
     public static final Item PURPLE_GLOWSTICK = registerItem("purple_glowstick", properties -> new GlowstickItem(properties.stacksTo(1)));
     public static final Item MAGENTA_GLOWSTICK = registerItem("magenta_glowstick", properties -> new GlowstickItem(properties.stacksTo(1)));
     public static final Item PINK_GLOWSTICK = registerItem("pink_glowstick", properties -> new GlowstickItem(properties.stacksTo(1)));
+
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function){
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,name),

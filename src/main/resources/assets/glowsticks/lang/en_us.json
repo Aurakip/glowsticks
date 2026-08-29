@@ -14,5 +14,8 @@
   "item.glowsticks.blue_glowstick": "Blue Glowstick",
   "item.glowsticks.purple_glowstick": "Purple Glowstick",
   "item.glowsticks.magenta_glowstick": "Magenta Glowstick",
-  "item.glowsticks.pink_glowstick": "Pink Glowstick"
+  "item.glowsticks.pink_glowstick": "Pink Glowstick",
+
+
+  "creativemodetab.glowsticks.glowstick_items": "Glowsticks"
 }

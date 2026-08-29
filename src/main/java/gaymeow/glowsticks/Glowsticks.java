@@ -1,5 +1,6 @@
 package gaymeow.glowsticks;
 
+import gaymeow.glowsticks.creativemodetab.ModCreativeModeTabs;
 import gaymeow.glowsticks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -16,6 +17,7 @@ public class Glowsticks implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("♪ Preparing for the show ♫");
 		ModItems.registerModItems();
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 	}
 
 }
