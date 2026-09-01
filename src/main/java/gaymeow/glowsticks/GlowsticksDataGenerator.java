@@ -1,5 +1,6 @@
 package gaymeow.glowsticks;
 
+import gaymeow.glowsticks.datagen.ModItemTagsProvider;
 import gaymeow.glowsticks.datagen.ModModelProvider;
 import gaymeow.glowsticks.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -12,5 +13,6 @@ public class GlowsticksDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModItemTagsProvider::new);
 	}
 }

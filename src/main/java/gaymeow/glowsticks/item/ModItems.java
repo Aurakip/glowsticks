@@ -32,6 +32,9 @@ public class ModItems {
     public static final Item MAGENTA_GLOWSTICK = registerItem("magenta_glowstick", properties -> new GlowstickItem(properties.stacksTo(1)));
     public static final Item PINK_GLOWSTICK = registerItem("pink_glowstick", properties -> new GlowstickItem(properties.stacksTo(1)));
 
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function){
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,name),

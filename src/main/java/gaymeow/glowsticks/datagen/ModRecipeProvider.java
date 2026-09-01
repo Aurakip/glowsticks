@@ -23,7 +23,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
 
-
                 shaped(RecipeCategory.MISC, ModItems.WHITE_GLOWSTICK)
                         .pattern("D")
                         .pattern("G")
@@ -135,7 +134,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("I")
                         .define('D', ConventionalItemTags.PINK_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.IRON_INGOT)
                         .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("glowstick").save(output);
-
             }
         };
     }
