@@ -2,6 +2,7 @@ package gaymeow.glowsticks;
 
 import gaymeow.glowsticks.creativemodetab.ModCreativeModeTabs;
 import gaymeow.glowsticks.item.ModItems;
+import gaymeow.glowsticks.particles.ModParticles;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -18,6 +19,7 @@ public class Glowsticks implements ModInitializer {
 		LOGGER.info("♪ Preparing for the show ♫");
 		ModItems.registerModItems();
 		ModCreativeModeTabs.registerModCreativeModeTabs();
+		ModParticles.registerModParticles();
 	}
 
 }

@@ -1,9 +1,8 @@
 package gaymeow.glowsticks.item.custom;
 
 
+import gaymeow.glowsticks.particles.ModParticles;
 import gaymeow.glowsticks.tags.ModTags;
-import net.minecraft.core.particles.ColorParticleOption;
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -37,27 +36,27 @@ public class GlowstickItem extends Item {
             ModTags.Items.PINK_GLOWSTICKS};
 
     //array with the values of each color
-    public static float[][] colorValueArray = {
-            {1f, 1f, 1f},
-            {0.6f, 0.6f, 0.6f},
-            {0.298f, 0.298f, 0.298f},
-            {0.098f, 0.098f, 0.098f},
-            {0.4f, 0.298f, 0.2f},
-            {0.6f, 0.2f, 0.2f},
-            {0.847f, 0.498f, 0.2f},
-            {0.898f, 0.898f, 0.2f},
-            {0.498f, 0.8f, 0.098f},
-            {0.4f, 0.498f, 0.2f},
-            {0.298f, 0.498f, 0.6f},
-            {0.4f, 0.6f, 0.847f},
-            {0.2f, 0.298f, 0.698f},
-            {0.498f, 0.247f, 0.698f},
-            {0.698f, 0.298f, 0.847f},
-            {0.949f, 0.498f, 0.647f}};
+    public static double[][] colorValueArray = {
+            {1, 1, 1},
+            {0.6, 0.6, 0.6},
+            {0.298, 0.298, 0.298},
+            {0.098, 0.098, 0.098},
+            {0.4, 0.298, 0.2},
+            {0.6, 0.2, 0.2},
+            {0.847, 0.498, 0.2},
+            {0.898, 0.898, 0.2},
+            {0.498, 0.8, 0.098},
+            {0.4, 0.498, 0.2},
+            {0.298, 0.498, 0.6},
+            {0.4, 0.6, 0.847},
+            {0.2, 0.298, 0.698},
+            {0.498, 0.247, 0.698},
+            {0.698, 0.298, 0.847},
+            {0.949, 0.498, 0.647}};
 
     //picks color for particles
-    public float[] colorPicker(ItemStack itemStack){
-        float[] colors = {0,0,0};
+    public double[] colorPicker(ItemStack itemStack){
+        double[] colors = {0,0,0};
         for (int i=0; i<colorTagArray.length; i++){
             if (itemStack.is(colorTagArray[i])){
                 colors = colorValueArray[i];
@@ -72,8 +71,9 @@ public class GlowstickItem extends Item {
     public void hurtEnemy(ItemStack itemStack, LivingEntity mob, LivingEntity attacker) {
         super.hurtEnemy(itemStack, mob, attacker);
         mob.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60));
-        float[] colors = colorPicker(itemStack);
-        ColorParticleOption particle = ColorParticleOption.create(ParticleTypes.TINTED_LEAVES, colors[0],colors[1],colors[2]);
-        ((ServerLevel) mob.level()).sendParticles(particle, mob.getX(),mob.getEyeY(),mob.getZ(),5,0.5,0.15,0.5,0.3);
+        double[] colors = colorPicker(itemStack);
+        for (int i=0; i<5; i++){
+        ((ServerLevel) mob.level()).sendParticles(ModParticles.NOTE, mob.getX() + (Math.random()-0.5)*(mob.getBoundingBox().getXsize()+1), mob.getEyeY() + Math.random()*0.2-0.1,mob.getZ() + (Math.random()-0.5)*(mob.getBoundingBox().getZsize()+1),0,colors[0],colors[1],colors[2],1);
+        }
     }
 }
