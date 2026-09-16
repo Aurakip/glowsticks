@@ -1,10 +1,14 @@
 package gaymeow.glowsticks.item.custom;
 
 
+import com.zigythebird.playeranim.animation.PlayerAnimationController;
+import com.zigythebird.playeranim.api.PlayerAnimationAccess;
+import gaymeow.glowsticks.Glowsticks;
 import gaymeow.glowsticks.particles.ModParticles;
 import gaymeow.glowsticks.tags.ModTags;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.stats.Stats;
 import net.minecraft.tags.TagKey;
@@ -12,12 +16,10 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.level.Level;
 
 
@@ -106,28 +108,27 @@ public class GlowstickItem extends Item {
         }
     }
 
-    @Override
-    public ItemUseAnimation getUseAnimation(ItemStack itemStack) {
-        return ItemUseAnimation.TRIDENT;
+    //animations for the glowstick
+    public PlayerAnimationController cheerController(Player player){
+        return (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(player, Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,"cheer"));
     }
 
     @Override
     //emits particles on right click
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
-        int particleNumber;
-        if (hand.asEquipmentSlot().compareTo(EquipmentSlot.MAINHAND)==0) {
-            particleNumber = 3;
-        }else{
-            particleNumber = 2;
-        }
-        double[] colors = colorPicker(player.getItemInHand(hand));
-        SimpleParticleType particle = particlePicker(player.getItemInHand(hand));
-        if (!level.isClientSide()) {
-            for (int i = 0; i < particleNumber; i++) {
-                ((ServerLevel) level).sendParticles(particle, player.getX() + (Math.random() - 0.5) * 3, player.getEyeY() + Math.random() * 0.2 - 0.1, player.getZ() + (Math.random() - 0.5) * 3, 0, colors[0], colors[1], colors[2], 1);
+        double[] colors;
+        SimpleParticleType particle;
+        // if(player.isCrouching() && player.getOffhandItem().is(player.getMainHandItem().getItem())){}
+        if (player.getMainHandItem().is(ModTags.Items.GLOWSTICKS)) {
+            colors = colorPicker(player.getMainHandItem());
+            particle = particlePicker(player.getMainHandItem());
+            if (!level.isClientSide()) {
+                for (int i = 0; i < 3; i++) {
+                    ((ServerLevel) level).sendParticles(particle, player.getX() + (Math.random() - 0.5) * 3, player.getEyeY() + Math.random() * 0.2 - 0.1, player.getZ() + (Math.random() - 0.5) * 3, 0, colors[0], colors[1], colors[2], 1);
+                }
             }
         }
-        if (particleNumber == 3 && player.getOffhandItem().is(ModTags.Items.GLOWSTICKS)){
+        if (player.getOffhandItem().is(ModTags.Items.GLOWSTICKS)){
             colors = colorPicker(player.getOffhandItem());
             particle = particlePicker(player.getOffhandItem());
             if (!level.isClientSide()) {
@@ -136,7 +137,9 @@ public class GlowstickItem extends Item {
                 }
             }
         }
+        cheerController(player).triggerAnimation(Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,"cheer"));
         player.awardStat(Stats.ITEM_USED.get(this));
+        player.startUsingItem(hand);
         return InteractionResult.SUCCESS;
     }
 }
