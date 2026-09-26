@@ -8,7 +8,7 @@ import net.minecraft.resources.Identifier;
 
 public class ModAnimations {
     public static void registerModAnimations(){
-        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,"cheer"), 1000,
+        PlayerAnimationFactory.ANIMATION_DATA_FACTORY.registerFactory(Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,"cheer"), 1500,
                 player -> new PlayerAnimationController(player,
                         (controller, state, animSetter) -> PlayState.STOP
                 )

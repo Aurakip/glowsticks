@@ -3,6 +3,8 @@ package gaymeow.glowsticks.item.custom;
 
 import com.zigythebird.playeranim.animation.PlayerAnimationController;
 import com.zigythebird.playeranim.api.PlayerAnimationAccess;
+import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonConfiguration;
+import com.zigythebird.playeranimcore.api.firstPerson.FirstPersonMode;
 import gaymeow.glowsticks.Glowsticks;
 import gaymeow.glowsticks.particles.ModParticles;
 import gaymeow.glowsticks.tags.ModTags;
@@ -78,11 +80,13 @@ public class GlowstickItem extends Item {
     }
 
     public static TagKey[] particleTagArray = {
-            ModTags.Items.NOTE_GLOWSTICKS};
+            ModTags.Items.NOTE_GLOWSTICKS,
+            ModTags.Items.SPARKLING_GLOWSTICKS};
 
     //array w/ the glowstick particles
     public static SimpleParticleType[] particleArray = {
-            ModParticles.NOTE};
+            ModParticles.NOTE,
+            ModParticles.SPARKLE};
 
     //picks particle for glowsticks
     public SimpleParticleType particlePicker(ItemStack itemStack){
@@ -110,7 +114,13 @@ public class GlowstickItem extends Item {
 
     //animations for the glowstick
     public PlayerAnimationController cheerController(Player player){
-        return (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(player, Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,"cheer"));
+        PlayerAnimationController controller = (PlayerAnimationController) PlayerAnimationAccess.getPlayerAnimationLayer(player, Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID,"cheer"));
+        controller.setFirstPersonMode(FirstPersonMode.THIRD_PERSON_MODEL);
+        controller.setFirstPersonConfiguration(new FirstPersonConfiguration()
+                .setShowLeftArm(true)
+                .setShowRightArm(true));
+        controller.setFirstPersonFollowsCamera(true);
+        return controller;
     }
 
     @Override
@@ -118,7 +128,7 @@ public class GlowstickItem extends Item {
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         double[] colors;
         SimpleParticleType particle;
-        // if(player.isCrouching() && player.getOffhandItem().is(player.getMainHandItem().getItem())){}
+        //if(player.isCrouching() && player.getOffhandItem().is(player.getMainHandItem().getItem())){}
         if (player.getMainHandItem().is(ModTags.Items.GLOWSTICKS)) {
             colors = colorPicker(player.getMainHandItem());
             particle = particlePicker(player.getMainHandItem());

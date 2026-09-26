@@ -27,6 +27,7 @@ public class ModTags {
 
         public static final TagKey<Item> GLOWSTICKS = createTag("glowsticks");
         public static final TagKey<Item> NOTE_GLOWSTICKS = createTag("note_glowsticks");
+        public static final TagKey<Item> SPARKLING_GLOWSTICKS = createTag("sparkling_glowsticks");
 
         private static TagKey<Item> createTag(String name){
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Glowsticks.MOD_ID, name));

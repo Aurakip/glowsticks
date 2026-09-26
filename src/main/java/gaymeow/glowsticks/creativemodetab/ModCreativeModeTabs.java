@@ -32,6 +32,22 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PURPLE_GLOWSTICK);
                         output.accept(ModItems.MAGENTA_GLOWSTICK);
                         output.accept(ModItems.PINK_GLOWSTICK);
+                        output.accept(ModItems.WHITE_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.LIGHT_GRAY_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.GRAY_SPARKLING_GLOWSTICK );
+                        output.accept(ModItems.BLACK_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.BROWN_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.RED_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.ORANGE_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.YELLOW_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.LIME_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.GREEN_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.CYAN_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.LIGHT_BLUE_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.BLUE_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.PURPLE_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.MAGENTA_SPARKLING_GLOWSTICK);
+                        output.accept(ModItems.PINK_SPARKLING_GLOWSTICK);
                     })
 
                     .build());

@@ -16,52 +16,68 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider registries) {
         tag(ModTags.Items.WHITE_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.WHITE_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.WHITE_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.WHITE_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.LIGHT_GRAY_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.LIGHT_GRAY_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.LIGHT_GRAY_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.LIGHT_GRAY_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.GRAY_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.GRAY_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.GRAY_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.GRAY_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.BLACK_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.BLACK_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.BLACK_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.BLACK_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.BROWN_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.BROWN_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.BROWN_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.BROWN_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.RED_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.RED_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.RED_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.RED_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.ORANGE_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.ORANGE_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.ORANGE_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.ORANGE_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.YELLOW_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.YELLOW_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.YELLOW_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.YELLOW_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.LIME_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.LIME_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.LIME_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.LIME_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.GREEN_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.GREEN_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.GREEN_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.GREEN_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.CYAN_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.CYAN_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.CYAN_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.CYAN_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.LIGHT_BLUE_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.LIGHT_BLUE_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.LIGHT_BLUE_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.LIGHT_BLUE_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.BLUE_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.BLUE_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.BLUE_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.BLUE_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.PURPLE_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.PURPLE_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.PURPLE_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.PURPLE_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.MAGENTA_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.MAGENTA_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.MAGENTA_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.MAGENTA_SPARKLING_GLOWSTICK));
 
         tag(ModTags.Items.PINK_GLOWSTICKS)
-                .add(ModItems.getRK(ModItems.PINK_GLOWSTICK));
+                .add(ModItems.getRK(ModItems.PINK_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.PINK_SPARKLING_GLOWSTICK));;
 
         tag(ModTags.Items.NOTE_GLOWSTICKS)
                 .add(ModItems.getRK(ModItems.WHITE_GLOWSTICK))
@@ -81,7 +97,26 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.MAGENTA_GLOWSTICK))
                 .add(ModItems.getRK(ModItems.PINK_GLOWSTICK));
 
+        tag(ModTags.Items.SPARKLING_GLOWSTICKS)
+                .add(ModItems.getRK(ModItems.WHITE_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.LIGHT_GRAY_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.GRAY_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.BLACK_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.BROWN_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.RED_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.ORANGE_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.YELLOW_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.LIME_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.GREEN_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.CYAN_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.LIGHT_BLUE_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.BLUE_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.PURPLE_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.MAGENTA_SPARKLING_GLOWSTICK))
+                .add(ModItems.getRK(ModItems.PINK_SPARKLING_GLOWSTICK));
+
         tag(ModTags.Items.GLOWSTICKS)
-                .addTag(ModTags.Items.NOTE_GLOWSTICKS);
+                .addTag(ModTags.Items.NOTE_GLOWSTICKS)
+                .addTag(ModTags.Items.SPARKLING_GLOWSTICKS);
     }
 }

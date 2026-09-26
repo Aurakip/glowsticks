@@ -134,6 +134,118 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("I")
                         .define('D', ConventionalItemTags.PINK_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.IRON_INGOT)
                         .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.WHITE_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.WHITE_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.LIGHT_GRAY_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.LIGHT_GRAY_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.GRAY_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.GRAY_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.BLACK_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.BLACK_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.BROWN_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.BROWN_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.RED_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.RED_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.ORANGE_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.ORANGE_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.YELLOW_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.YELLOW_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.LIME_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.LIME_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.GREEN_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.GREEN_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.CYAN_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.WHITE_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.LIGHT_BLUE_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.LIGHT_BLUE_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.BLUE_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.BLUE_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.PURPLE_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.PURPLE_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.MAGENTA_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.MAGENTA_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.PINK_SPARKLING_GLOWSTICK)
+                        .pattern("D")
+                        .pattern("G")
+                        .pattern("I")
+                        .define('D', ConventionalItemTags.PINK_DYES).define('G',Items.GLOWSTONE_DUST).define('I',Items.COPPER_INGOT)
+                        .unlockedBy(getHasName(Items.GLOWSTONE_DUST), has(Items.GLOWSTONE_DUST)).group("sparkling_glowstick").save(output);
             }
         };
     }

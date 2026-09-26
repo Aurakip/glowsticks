@@ -13,6 +13,7 @@ import net.minecraft.resources.Identifier;
 public class ModParticles {
 
     public static final SimpleParticleType NOTE = registerParticle("note");
+    public static final SimpleParticleType SPARKLE = registerParticle("sparkle");
 
     private static SimpleParticleType registerParticle(String name){
         SimpleParticleType particle = FabricParticleTypes.simple();
@@ -21,5 +22,6 @@ public class ModParticles {
 
     public static void registerModParticles(){
         ParticleProviderRegistry.getInstance().register(ModParticles.NOTE, GlowstickParticle.Provider::new);
+        ParticleProviderRegistry.getInstance().register(ModParticles.SPARKLE, GlowstickParticle.Provider::new);
     }
 }
