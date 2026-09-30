@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "glowsticks:item/purple_sparkling_glowstick"
+  }
+}

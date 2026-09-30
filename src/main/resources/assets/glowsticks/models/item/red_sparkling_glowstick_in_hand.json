@@ -1,7 +1,7 @@
 {
   "parent": "glowsticks:item/base_glowstick_in_hand",
   "textures": {
-    "base": "glowsticks:item/glowstick_base",
+    "base": "glowsticks:item/sparkling_glowstick_base",
     "light": "glowsticks:item/red_glowstick_light"
   }
 }
