@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sparkling_glowstick",
+  "key": {
+    "D": "#c:dyes/white",
+    "G": "minecraft:glowstone_dust",
+    "I": "minecraft:copper_ingot"
+  },
+  "pattern": [
+    "D",
+    "G",
+    "I"
+  ],
+  "result": {
+    "id": "glowsticks:white_sparkling_glowstick"
+  }
+}

@@ -6,6 +6,9 @@ import gaymeow.glowsticks.particles.ModParticles;
 import gaymeow.glowsticks.playeranimations.ModAnimations;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
+import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.Identifier;
 
 import org.slf4j.Logger;
@@ -22,6 +25,10 @@ public class Glowsticks implements ModInitializer {
 		ModCreativeModeTabs.registerModCreativeModeTabs();
 		ModParticles.registerModParticles();
 		ModAnimations.registerModAnimations();
+
+		//for extra resource packs
+		FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(modContainer ->
+				ResourceLoader.registerBuiltinPack(Identifier.fromNamespaceAndPath(MOD_ID,"3d_glowstick_models"),modContainer, PackActivationType.NORMAL));
 	}
 
 }

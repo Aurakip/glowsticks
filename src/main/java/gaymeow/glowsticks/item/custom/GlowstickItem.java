@@ -26,9 +26,7 @@ import net.minecraft.world.level.Level;
 
 
 public class GlowstickItem extends Item {
-    public GlowstickItem(Properties properties) {
-        super(properties);
-    }
+    public GlowstickItem(Properties properties) {super(properties);}
 
     public static TagKey[] colorTagArray = {
             ModTags.Items.WHITE_GLOWSTICKS,

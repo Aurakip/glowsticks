@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "glowsticks:item/black_sparkling_glowstick"
+  }
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
 
 public class ModModelProvider extends FabricModelProvider {
 
@@ -19,21 +20,37 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerators itemModelGenerators) {
-        //itemModelGenerators.declareCustomModelItem(ModItems.WHITE_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.LIGHT_GRAY_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.GRAY_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.BLACK_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.BROWN_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.RED_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.ORANGE_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.YELLOW_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.LIME_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.GREEN_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.CYAN_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.LIGHT_BLUE_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.BLUE_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.PURPLE_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.MAGENTA_GLOWSTICK);
-        //itemModelGenerators.declareCustomModelItem(ModItems.PINK_GLOWSTICK);
+        itemModelGenerators.generateFlatItem(ModItems.WHITE_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LIGHT_GRAY_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GRAY_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BLACK_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BROWN_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.RED_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ORANGE_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.YELLOW_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LIME_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GREEN_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CYAN_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LIGHT_BLUE_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BLUE_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PURPLE_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MAGENTA_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PINK_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.WHITE_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LIGHT_GRAY_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GRAY_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BLACK_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BROWN_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.RED_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.ORANGE_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.YELLOW_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LIME_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.GREEN_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CYAN_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LIGHT_BLUE_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.BLUE_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PURPLE_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.MAGENTA_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.PINK_SPARKLING_GLOWSTICK, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }
