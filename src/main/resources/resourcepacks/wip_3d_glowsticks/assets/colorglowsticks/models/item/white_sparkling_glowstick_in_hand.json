@@ -1,0 +1,7 @@
+{
+  "parent": "colorglowsticks:item/base_glowstick_in_hand",
+  "textures": {
+    "base": "colorglowsticks:item/sparkling_glowstick_base",
+    "light": "colorglowsticks:item/white_glowstick_light"
+  }
+}

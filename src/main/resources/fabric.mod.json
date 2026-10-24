@@ -1,29 +1,29 @@
 {
 	"schemaVersion": 1,
-	"id": "glowsticks",
+	"id": "colorglowsticks",
 	"version": "${version}",
-	"name": "glowsticks",
-	"description": "A mod that brings lights to any occasion✨",
+	"name": "colorglowsticks",
+	"description": "A mod to bring the light show to any occasion✨",
 	"authors": [
-		"Gay Meow!"
+		"Aurakip"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://modrinth.com/project/colorful-glowsticks",
+		"sources": "https://github.com/Aurakip/glowsticks"
 	},
 	"license": "MIT-License",
-	"icon": "assets/glowsticks/icon.png",
+	"icon": "assets/colorglowsticks/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"gaymeow.glowsticks.Glowsticks"
+			"gaymeow.colorglowsticks.ColorGlowsticks"
 		],
 		"fabric-datagen": [
-			"gaymeow.glowsticks.GlowsticksDataGenerator"
+			"gaymeow.colorglowsticks.CGDataGenerator"
 		]
 	},
 	"mixins": [
-		"glowsticks.mixins.json"
+		"colorglowsticks.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.3",
