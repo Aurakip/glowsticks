@@ -2,13 +2,13 @@
 	"schemaVersion": 1,
 	"id": "colorglowsticks",
 	"version": "${version}",
-	"name": "colorglowsticks",
+	"name": "Colorful Glowsticks",
 	"description": "A mod to bring the light show to any occasion✨",
 	"authors": [
 		"Aurakip"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/project/colorful-glowsticks",
+		"homepage": "https://modrinth.com/project/GBudEKIk",
 		"sources": "https://github.com/Aurakip/glowsticks"
 	},
 	"license": "MIT-License",
