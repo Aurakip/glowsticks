@@ -31,6 +31,6 @@
 		"minecraft": "~26.2",
 		"java": ">=25",
 		"fabric-api": "*",
-		"pal_version":">=1.2.8+mc.26.2"
+		"player_animation_library":">=1.2.8+mc.26.2"
 	}
 }
